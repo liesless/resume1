@@ -680,7 +680,16 @@ COMMENT ON COLUMN admin.users.password_hash IS 'пароль';
 COMMENT ON COLUMN admin.users.lang IS 'язык по умолчанию';
 COMMENT ON COLUMN admin.users.location IS 'страна пребывания';
 
-
+CREATE table admin.apps (
+id SMALLSERIAL PRIMARY KEY,
+name VARCHAR(50),
+title VARCHAR(50),
+description VARCHAR(50)
+);
+COMMENT ON TABLE admin.apps IS 'модули сервиса okey';
+COMMENT ON COLUMN admin.apps.name IS 'Название модуля';
+COMMENT ON COLUMN admin.apps.title IS 'Заголовок модуля';
+COMMENT ON COLUMN admin.apps.description IS 'Описание модуля';
 
 --НОВАЯ СХЕМА DEVICES
 
