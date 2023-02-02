@@ -731,7 +731,8 @@ email_confirm boolean,
 email_confirm_code character varying(100), 
 password_hash character varying(100), 
 lang smallint, 
-location smallint 
+location smallint, 
+apple_id varchar NULL
 );
 COMMENT ON TABLE admin.users IS '(пользователи)';
 COMMENT ON COLUMN admin.users.date_create IS 'дата создания аккаунта';
